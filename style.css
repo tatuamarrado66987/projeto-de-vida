@@ -18,7 +18,8 @@ display:flex;
 flex-direction: column;
 justify-content: center;
 align-items: center;
-max-width: 100%;
+max-width: 1200px;
+width: 100%;
 margin: 0 auto;
 
 }
@@ -51,17 +52,25 @@ border-top: none;
 }
 .botão:first-child{
 border-radius: 40px 40px 0 0;
-
-
 }
 
-.botoes{
+.botoes.ativo{
 display: block;
 
 }
 .ativo{
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde);
+}
+.abas-texto{
+    background-color: var(--botao-ativo);
+    border-bottom: 4px solid var(--verde);
+}
+.aba-conteudo-ativo{
+    display: block;
+}
+.aba.conteudo{
+    display: none;
 }
 @media screen and (min-width:750px){
 .botoes{
