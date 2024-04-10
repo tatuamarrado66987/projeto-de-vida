@@ -69,6 +69,10 @@ body{
     color: var(--verde);
     text-transform: uppercase;
 
+.contador{
+    font-size: 20px;
+    text
+}
 }
 
 @media screen and (min-width: 750px){
