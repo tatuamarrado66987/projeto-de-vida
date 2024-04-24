@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
 :root {
     --cor-de-fundo:#1e1e1e;
@@ -50,30 +51,35 @@ body{
 .botoes.ativo{
     display: block;
 }
-.ativo {
+.ativo{
     background-color: var(--botao-ativo);
     border-bottom: 4px solid var(--verde);
 }
+
 .aba-conteudo.ativo{
     display: block;
 }
 .aba-conteudo{
     display: none;
 }
-.aba-coteudo-titulo-pincipal{
-    font-size: 28px;
-    text-align: center;
+
+.aba-conteudo-texto-principal{
+font-size: 28px;
+text-align:center;
+
 }
-.aba-conteudo-titulo-secundario{
+.aba-conteudo-texto-secundario{
     text-align: center;
     color: var(--verde);
     text-transform: uppercase;
-
+}
 .contador{
-    font-size: 20px;
-    text
+    text-align: center;
+    font-size: 28px;
 }
-}
+
+
+
 
 @media screen and (min-width: 750px){
     .botoes{ 
@@ -86,3 +92,4 @@ body{
         border-radius: 0 40px 0 0;
     }
 }
+
