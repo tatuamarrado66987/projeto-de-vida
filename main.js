@@ -24,7 +24,7 @@ const tempos = [tempoObjetivo1,tempoObjetivo2,tempoObjetivo3,tempoObjetivo4];
 
 function atualizaCronometro(){
     for(let i= 0; i<contadores.length;i++){
-    contadores[i].textContent=calculaTempo(tempos[i]);
+    contadores[0].textContent=calculaTempo(tempoObjetivo1);
     }
 }
 
@@ -49,7 +49,7 @@ function calculaTempo(tempoObjetivo){
 }
 function comecaCronometro(){
     atualizaCronometro();
-    setInterval(atualizaCronometro, 1000);
+    setInterval(atualizaCronometro, 100);
 }
 //comecaCronometro();
 
