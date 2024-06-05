@@ -24,7 +24,11 @@ const tempos = [tempoObjetivo1,tempoObjetivo2,tempoObjetivo3,tempoObjetivo4];
 
 function atualizaCronometro(){
     for(let i= 0; i<contadores.length;i++){
-    contadores[0].textContent=calculaTempo(tempoObjetivo1);
+    document.getElementById("dias"+i).textContent = calculaTempo(tempos[i])[0];
+    document.getElementById("horas"+i).textContent = calculaTempo(tempos[i])[1];
+    document.getElementById("minutos"+i).textContent = calculaTempo(tempos[i])[2];
+    document.getElementById("segundos"+i).textContent = calculaTempo(tempos[i])[3];
+
     }
 }
 
@@ -41,15 +45,15 @@ function calculaTempo(tempoObjetivo){
     minutos%= 60;
     horas%= 24;
     if(tempoFinal>0){
-    return dias + "dias" + horas + "horas" + minutos + "minutos" +segundos + "segundos";
+    return [dias,horas,minutos,segundos];
     }
     else{
-        return "Prazo Finalizado"
+        return [0,0,0,0]
     }
 }
 function comecaCronometro(){
     atualizaCronometro();
     setInterval(atualizaCronometro, 100);
 }
-//comecaCronometro();
+comecaCronometro();
 
